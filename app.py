@@ -2,31 +2,32 @@ from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
-JOBS = [{
+Projects = [{
   'id': 1,
-  'title': 'Data Analyst',
-  'Location': 'Bengaluru, India',
-  'Salary': 'Rs. 15 Lac'
+  'title': 'Exploratory Data Analysis on Brazilian E-Commerce Olist',
+  'Libraries': 'Pandas, Numpy, Matplotlib, Seaborn, Plotly'
 }, {
   'id': 2,
-  'title': 'Data Analyst',
-  'Location': 'Pune, India',
-  'Salary': 'Rs. 5 Lac'
+  'title': 'Exploratory Data Analysis and Visualization of Breast Cancer Data',
+  'Libraries': 'Pandas, Numpy, Matplotlib, Seaborn, Plotly'
 }, {
   'id': 3,
-  'title': 'Data Associate',
-  'Location': 'Bengaluru, India',
-  'Salary': 'Rs. 7 Lac'
+  'title': 'Automated Web scraping project of Flipkart',
+  'Libraries': 'Pandas, Numpy, Selenium, AWS, Beautifulsoup'
+}, {
+  'id': 4,
+  'title': 'Sudoku'
 }]
 
 
 @app.route("/")
 def hello_world():
-  return render_template('home.html', jobs=JOBS)
+  return render_template('home.html', project=Projects)
+
 
 @app.route("/api/jobs")
 def list_jobs():
-  return jsonify(JOBS)
+  return jsonify(Projects)
 
 
 if __name__ == '__main__':
