@@ -17,13 +17,18 @@ Projects = [{
 }, {
   'id': 4,
   'title': 'Sudoku Solver',
-  'Libraries' : 'Pandas NumPy'
+  'Libraries': 'Pandas NumPy'
 }]
 
 
 @app.route("/")
-def hello_world():
+def home():
   return render_template('home.html', project=Projects)
+
+
+@app.route("/portfolio")
+def portfolio():
+  return render_template('portfolio.html')
 
 
 @app.route("/api/projects")
