@@ -26,7 +26,7 @@ def hello_world():
   return render_template('home.html', project=Projects)
 
 
-@app.route("/api/jobs")
+@app.route("/api/projects")
 def list_jobs():
   return jsonify(Projects)
 
