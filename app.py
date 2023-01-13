@@ -16,7 +16,8 @@ Projects = [{
   'Libraries': 'Pandas, Numpy, Selenium, AWS, Beautifulsoup'
 }, {
   'id': 4,
-  'title': 'Sudoku'
+  'title': 'Sudoku Solver',
+  'Libraries' : 'Pandas NumPy'
 }]
 
 

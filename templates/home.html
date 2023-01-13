@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,10 +8,17 @@
     
   </head>
   <body>
+    <!-- Background image -->
+<div
+  class="bg-image"
+  style="
+    background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp');
+    height: 100vh;
+  "
+></div>
+<!-- Background image -->
     <div class="container" >
-      <h1 class='text-center mt-4 mb-4'> Portfolio </h1>
-        <img class='img-fluid' id="banner" src = 'https://jovian-career-website.yashbhairao.repl.co/static/banner.jpg'
-        height='320'>
+      
           <h2 class='text-center mt-4 mb-4'>About Data Analyst</h2>
             <p class='lead'>A data analyst gathers, cleans, and studies data sets to help solve problems. Here's how you can start on a path to become one. A data analyst collects, cleans, and interprets data sets in order to answer a question or solve a problem.
             </p>
@@ -21,11 +28,14 @@
                 {% include 'projects.html' %}
               {% endfor %}
             </div>
-      <div>
-      <button class='mt-4 mb-4'>Contact</button></div>
+        <div>
+          {% include 'cards.html' %}
+        </div>
+            <div>
+      <button class='mt-4 mb-4'>Contact</button>
+            </div>
             <p class='text-center mt-4 mb-4'>Copyright 2022, YB</p>
         </div>
-          
   </body>
   
   
