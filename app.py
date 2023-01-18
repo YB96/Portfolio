@@ -48,6 +48,11 @@ def portfolio():
   return render_template('portfolio.html')
 
 
+@app.route("/about")
+def aboutme():
+  return render_template('aboutme.html')
+
+
 @app.route("/api/projects")
 def list_jobs():
   return jsonify(Projects)

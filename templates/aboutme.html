@@ -3,19 +3,53 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+    <title>About</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
+
   </head>
-  <body>
-    <!-- Background image -->
+<body>
+<!-- Background image -->
 <div
   class="bg-image"
   style="
     background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
-    height: 100vh;
+    height: 50vh;
   ">
-  
   </div>
 <!-- Background image -->
-<button class='mt-4 mb-4'>Contact</button>
+<div class="container-md" >
+  <h2 class='text-center mt-4 mb-4 shadow-lg p-3 mb-5 bg-body-tertiary rounded'>About YB</h2>
+  <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <p>
+        My name is James Willer. I graduated from MIT a month ago. Now, I am looking for my first full-time job. I have been working as a freelance web developer for the last three years and cooperated with several startups. I cannot say with 100% confidence where I see myself in five years or what my big career goal is. The world is changing rapidly, and I don’t have enough professional experience to be certain about such things. However, I know that I can provide a fresh take and an extraordinary approach to every project. I am always open to challenges and constructive feedback. I am open-minded and learn new things quickly. I want to become a team player and dedicate all my skills and talents to develop high-quality and unique products.
+      </p>
+    </div>
+    <div class="col-sm text-center">
+      <p>
+        <img src="/static/aboutme.jpg" class="img-fluid" alt="Responsive image">
+      </p>
+    </div> 
+    <style>
+      .img-fluid {
+        height: 400px;
+      }
+    </style>
+</div>
+  </div>
+</div>
+  
+  <div class="text-center">
+      <a href="mailto:yashchamp96@gmail.com?subject=Question%20about%20Job%20Opernings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20questions%3A%20%3Center%20question%20here%3E%0D%0A">Contact Us </a>
+  </div>
+
+  <div>
+   {% include 'nav.html' %}
+  {% include "footer.html" %}
+</div>
+
+
+  </body>
+  </html>
+  
