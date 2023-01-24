@@ -31,7 +31,7 @@ Projects = [{
   'https://jovian.com/outlink?url=https%3A%2F%2Fjovian.ai%2Fyashchamp96%2Fproject-web-scraping'
 }, {
   'id': 4,
-  'title': 'Prediction using Machine Learing of Bulldozers',
+  'title': 'Bulldozer Price Prediction - RandomForestRegressor',
   'Libraries':
   'Pandas, Numpy, Scikit-lear, Matplotlib, Plotly, Randomforest Regression',
   'link': 'https://jovian.com/yashchamp96/project-3-ml'

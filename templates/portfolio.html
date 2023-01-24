@@ -5,8 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+            <!-- styling projects seprator -->
+    
+<style>
+  #seprator {
+    height:5px;
+    border-width:0;
+    background-color: white;
+  }
+</style>
+
+           <!-- styling image tag -->
+    
+    <style>
+  .img-thumbnail {
+    height:360px;
+    width:100%;
+    object-fit:cover;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    border-radius: 28px;
+    background-color: blueviolet;
+  
+  }
+</style>
+
+  
     
   </head>
+
+  
   <body>
 <!-- Background image -->
 <div
@@ -21,15 +49,15 @@
 <div>
    {% include 'nav.html' %}
 </div>
-
             <!-- Projects --!>
      
     <!-- 1st Project -->
 <div class="container">
+  <h2 class='text-center mt-4 mb-4 shadow-lg p-3 mb-5 bg-body-tertiary rounded'>Portfolio</h2>
   <div class="row">
     <div class="col">
-    <a  href ="https://jovian.com/yashchamp96/project-2-exploratory-data-analysis" target='_blank'>
-      <img src="/static/olist.png" alt = 'extra' class="img-fluid"></a>
+    <a href ="https://jovian.com/yashchamp96/project-2-exploratory-data-analysis" target='_blank'>
+      <img src="/static/olist.png" alt = 'extra' class="img-thumbnail"></a>
        </div>
     <div class='col'>
       <h3 class="proj text-capitalize">
@@ -42,12 +70,14 @@ Olist is a Brazilian departmental store (marketplace) that operates in e-commerc
         </p>
     </div>
   </div>
-  
+
+<hr id="seprator">
+ 
     <!-- 2nd Project -->
     <div class="row">
     <div class="col">
     <a href='https://jovian.com/yashchamp96/course-project-on-breast-cancer' target="_blank">
-      <img src="/static/breastcancer.png" class="img-fluid"> </a>
+      <img src="/static/breastcancer.png" class="img-thumbnail"> </a>
        </div>
     <div class='col'>
       <h3>
@@ -59,11 +89,13 @@ Olist is a Brazilian departmental store (marketplace) that operates in e-commerc
     </div>
   </div>
 
+  <hr id="seprator">
+  
   <!-- 3rd Project -->
     <div class="row">
     <div class="col">
     <a href='https://jovian.com/yashchamp96/project-web-scraping' target='_blank'>
-      <img src="/static/flipkart.png" class="img-fluid"></a>
+      <img src="/static/flipkart.png" class="img-thumbnail"></a>
        </div>
     <div class='col'>
       <h3>
@@ -75,11 +107,13 @@ Olist is a Brazilian departmental store (marketplace) that operates in e-commerc
     </div>
   </div>
 
+    <hr id="seprator">
+  
   <!-- 4th Project -->
     <div class="row">
     <div class="col">
     <a href='https://jovian.com/yashchamp96/project-3-ml#C23' target="_blank">
-      <img src="/static/bulldozer.jpg" class="img-fluid"> </a>
+      <img src="/static/bulldozer.jpg" class="img-thumbnail"> </a>
        </div>
     <div class='col'>
       <h3>
