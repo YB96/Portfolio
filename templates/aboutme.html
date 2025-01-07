@@ -63,26 +63,38 @@ of insight is important.
   
 <div class="container-md" >
   <h2 class='text-center mt-4 mb-4 shadow-lg p-3 mb-5 bg-body-tertiary rounded'>Other Platforms</h2>
-  <div class='row'>
-    <div class='col-lg-6 col-md-6 single-price'>
-      <a href = "https://github.com/YB96">
-        <div class='top-part'>
-          <img src='/static/github.avif' width="300" height="400"> 
-          <h4>GitHub</h4>
-          <p class='mt-10'>All code files</p>
-        </div>
-      </a>
-    </div>
-    <div class='col-lg-6 col-md-6 single-price'>
-      <a href = "https://yb96.medium.com/">
-        <div class='top-part'>
-          <img src='/static/medium.png' width="300" height="400"> 
-          <h4>Medium</h4>
-          <p class='mt-10'>All blogs</p>
-        </div>
-      </a>
-    </div>
+<div class='row'>
+  <div class='col-lg-4 col-md-4 single-price'>
+    <a href="https://github.com/YB96" target='_blank'>
+      <div class='top-part'>
+        <img src='/static/github.avif' width="300" height="300">
+        <h4>GitHub</h4>
+        <p class='mt-10'>All code files</p>
+      </div>
+    </a>
   </div>
+
+  <div class='col-lg-4 col-md-4 single-price'>
+    <a href="https://yb96.medium.com/" target='_blank'>
+      <div class='top-part'>
+        <img src='/static/medium.png' width="300" height="300">
+        <h4>Medium</h4>
+        <p class='mt-10'>All blogs</p>
+      </div>
+    </a>
+  </div>
+
+  <div class='col-lg-4 col-md-4 single-price'>
+    <a href="https://public.tableau.com/app/profile/yash6435" target='_blank'>
+      <div class='top-part'>
+        <img src='static/tableau logo.png' width="300" height="300">
+        <h4>Tableau</h4>
+        <p class='mt-10'>All Dashboards</p>
+      </div>
+    </a>
+  </div>
+</div>
+
 </div>
   
   
@@ -95,4 +107,59 @@ of insight is important.
   
   </body>
   </html>
+
+<!-- CSS Section  -->
+
+<style>
+
+  .single-price {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.single-price:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Change the background color on hover */
+}
+
+.top-part {
+  position: relative;
+}
+
+.top-part img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+h4 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  color: #777;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  
+</style>
   
